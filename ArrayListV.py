@@ -44,6 +44,9 @@ class ArrayListV:
         main_frame = tk.Frame(window)
         main_frame.pack(fill=tk.BOTH, expand=True, side= tk.TOP)
 
+        label = tk.Label(master = main_frame, text="Array List looks like this: ")
+        label.pack(side=tk.TOP)
+
         canvas = tk.Canvas(master=main_frame, width = 800, height = 600)
         canvas.pack( fill=tk.BOTH, expand=True)
 
@@ -55,25 +58,28 @@ class ArrayListV:
         secondFrame = tk.Frame(canvas)
         canvas.create_window((0,0), window = secondFrame, anchor="nw")
 
+
+
         for i in range(len(self.list)):
             subframe = tk.Frame(
                     master=secondFrame,
                     relief=tk.RAISED,
                     borderwidth=1
                 )
-            subframe.grid(row=0, column=i)
-            label = tk.Label(master=subframe, text=f"Index {i}")
-            label.pack()
+            subframe.grid(row=1, column=i, sticky='nsew')
+            label = tk.Label(master=subframe, text=f"Index \n{i}")
+            label.pack(fill=tk.BOTH)
 
         for j in range(len(self.list)):
             subframe = tk.Frame(
                 master=secondFrame,
                 relief=tk.RAISED,
                 borderwidth=1
+                
             )
-            subframe.grid(row=i, column=j)
+            subframe.grid(row=2, column=j, sticky='nsew')
             label = tk.Label(master=subframe, text=self.list[j])
-            label.pack()
+            label.pack(fill=tk.BOTH)
 
 
         window.mainloop()
