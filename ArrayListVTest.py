@@ -4,6 +4,6 @@ test =  ArrayListV()
 
 
 for i in range(50):
-    test.addNode(i)
+    test.addNode(i * 2)
 
 test.show()
