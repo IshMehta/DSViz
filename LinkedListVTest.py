@@ -4,4 +4,4 @@ test = LinkedListV()
 
 for i in range(100):
     test.list.append(i)
-test.show()
+test.show(CLL=True, DLL=True)
