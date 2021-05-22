@@ -2,17 +2,18 @@ import tkinter as tk
 from tkinter.constants import BOTTOM, HORIZONTAL, RAISED
 from PIL import ImageTk, Image  
 
+# TODO: throw necessary errors, example, invalid data entry, etc
+
 class LinkedListV:
     list = []
-    # list stores nodes of format [value, True/False] 
-    # True if head, False if not Head
+
 
 
 
     def addNode(self, node, head = False, tail = False):
         self.list.append(node)
 
-    def show(self):
+    def show(self, DLL = False):
         window = tk.Tk()
         window.geometry("1000x800")
         window.title("Linked List Visualiser")
@@ -34,7 +35,11 @@ class LinkedListV:
         secondFrame = tk.Frame(canvas)
         canvas.create_window((0,0), window = secondFrame, anchor="nw")
 
-        arrowImage = Image.open("arrow.png")
+        #select correct arrow
+        if not DLL:
+            arrowImage = Image.open("arrow.png")
+        else:
+            arrowImage = Image.open("doubleArrow.png")
         arrowImage = arrowImage.resize((50,50))
         for i in range(len(self.list)):
             subframe = tk.Frame(
