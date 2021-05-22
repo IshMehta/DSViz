@@ -7,13 +7,10 @@ from PIL import ImageTk, Image
 class LinkedListV:
     list = []
 
-
-
-
     def addNode(self, node, head = False, tail = False):
         self.list.append(node)
 
-    def show(self, DLL = False):
+    def show(self, DLL = False, CLL = False):
         window = tk.Tk()
         window.geometry("1000x800")
         window.title("Linked List Visualiser")
@@ -41,6 +38,8 @@ class LinkedListV:
         else:
             arrowImage = Image.open("doubleArrow.png")
         arrowImage = arrowImage.resize((50,50))
+
+        tailIndex = 0
         for i in range(len(self.list)):
             subframe = tk.Frame(
                         master=secondFrame,
@@ -68,8 +67,20 @@ class LinkedListV:
             arrow = tk.Label(master=sub_subframe2, image=itest)
             arrow.image=itest
             arrow.pack(fill=tk.BOTH)
+        
+        # pointer at the end of the list
 
-            
+        subframe = tk.Frame(
+                        master=secondFrame,
+                        relief=tk.RAISED,
+                        borderwidth=5
+                    )
+        subframe.grid(row=1, column=len(self.list), sticky='nsew')
 
+        if CLL:
+            label = tk.Label(master = subframe, text = "Head")
+        else:
+            label = tk.Label(master = subframe, text = "Null")
+        label.pack(fill=tk.BOTH)        
         window.mainloop()
             
