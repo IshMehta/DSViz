@@ -34,9 +34,9 @@ class LinkedListV:
 
         #select correct arrow
         if not DLL:
-            arrowImage = Image.open("arrow.png")
+            arrowImage = Image.open("resources/arrow.png")
         else:
-            arrowImage = Image.open("doubleArrow.png")
+            arrowImage = Image.open("resources/doubleArrow.png")
         arrowImage = arrowImage.resize((50,50))
 
         tailIndex = 0
