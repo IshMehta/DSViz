@@ -1,4 +1,6 @@
-from LinkedListV import LinkedListV
+
+from DSViz.LinkedListV import LinkedListV
+
 
 test = LinkedListV()
 

@@ -1,4 +1,4 @@
-from ArrayListV import ArrayListV
+from DSViz.ArrayListV import ArrayListV
 
 test =  ArrayListV()
 
