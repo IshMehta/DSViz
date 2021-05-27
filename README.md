@@ -16,14 +16,14 @@ This package can be used to visualise any implementations of the following:
     * Directed Graphs
     * Undirected Graphs
 
-## Install
+# Install
 
 
 This library requires the GraphViz to be installed.
 
 
-Mac Users
----------
+# Mac 
+
 
 We recommend using Homebrew to install GraphViz.
 
@@ -66,7 +66,7 @@ TODO: pip install our package name
 
 
 
-## License
+# License
 
 This package is distributed under the [MIT License](https://github.com/IshMehta/DataStructureViz/blob/main/LICENSE)
 
