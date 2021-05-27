@@ -16,14 +16,14 @@ This package can be used to visualise any implementations of the following:
     * Directed Graphs
     * Undirected Graphs
 
-## Install
+# Install
 
 
 This library requires the GraphViz to be installed.
 
 
-Mac Users
----------
+## Mac
+
 
 We recommend using Homebrew to install GraphViz.
 
@@ -36,8 +36,8 @@ brew install graphviz
 > Important Note:
 > 
 
-Windows
--------
+## Windows
+
 
 Historically, installing Graphviz and PyGraphviz on Windows has been challenging.
 Fortunately, the Graphviz developers are working to fix this and
@@ -58,15 +58,40 @@ Manual download:
 Download and install 2.46.0 for Windows 10 (64-bit):
    [stable_windows_10_cmake_Release_x64_graphviz-install-2.46.0-win64.exe](https://gitlab.com/graphviz/graphviz/-/package_files/6164164/download)
 
-After installing GraphViz according to your OS, you can install our package and the other dependencies using pip
-
-```
-TODO: pip install our package name
-```
+## Linux
 
 
+We recommend installing Graphviz using your Linux system's package manager.
+Below are examples for some popular distributions.
 
-## License
+Ubuntu and Debian
+~~~~~~~~~~~~~~~~~
+
+.. code-block:: console
+
+    $ sudo apt-get install graphviz graphviz-dev
+
+
+Fedora and Red Hat
+~~~~~~~~~~~~~~~~~~
+
+You may need to replace ``dnf`` with ``yum`` in the example below.
+
+.. code-block:: console
+
+    $ sudo dnf install graphviz graphviz-devel
+
+
+> After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
+> 
+> ```
+> TODO: pip install our package name
+> ```
+
+*Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specidifc instructions on downloading GraphViz.*
+
+
+# License
 
 This package is distributed under the [MIT License](https://github.com/IshMehta/DataStructureViz/blob/main/LICENSE)
 
