@@ -1,5 +1,10 @@
 # DataStructureViz
 
+[![License](https://img.shields.io/badge/license-MIT-brightgreen)][license_link]
+
+[license_link]:https://github.com/IshMehta/DataStructureViz/blob/main/LICENSE
+
+
 DSViz is a simple and intuitive Python interface to multiple packages in order to help visualise different data structres while codng them. This package is developed mainly for students or developers who are in the process of learning data structures. 
 
  This packages acts as an interface to Tkinter a Python UI library and [GraphViz](https://www.graphviz.org/) which facillitates rendering of graphs described in the [DOT](https://www.graphviz.org/doc/info/lang.html) language.
@@ -32,8 +37,8 @@ We recommend using Homebrew to install GraphViz.
 
 Open terminal and run the following command (assuming you have Homebrew installed)
 
-```
-brew install graphviz
+```bash
+$ brew install graphviz
 ```
 
 > Important Note:
@@ -69,7 +74,7 @@ Below are examples for some popular distributions.
 
 Ubuntu and Debian
 
-```
+```bash
 .. code-block:: console
 
     $ sudo apt-get install graphviz graphviz-dev
@@ -80,7 +85,7 @@ Fedora and Red Hat
 
 
 You may need to replace ``dnf`` with ``yum`` in the example below.
-```
+```bash
 .. code-block:: console
 
     $ sudo dnf install graphviz graphviz-devel
@@ -88,8 +93,8 @@ You may need to replace ``dnf`` with ``yum`` in the example below.
 
 > After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
 > 
-> ```
-> TODO: pip install our package name
+> ```bash
+> TODO: $ pip install our package name
 > ```
 
 *Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specific instructions on downloading GraphViz.*
