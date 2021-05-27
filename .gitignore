@@ -1,1 +1,9 @@
+#Mac
 .DS_Store
+__pycache__
+.AppleDouble
+.LSOverride
+
+# C extensions
+*.so
+

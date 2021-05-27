@@ -68,22 +68,23 @@ We recommend installing Graphviz using your Linux system's package manager.
 Below are examples for some popular distributions.
 
 Ubuntu and Debian
-~~~~~~~~~~~~~~~~~
 
+```
 .. code-block:: console
 
     $ sudo apt-get install graphviz graphviz-dev
 
+```
 
 Fedora and Red Hat
-~~~~~~~~~~~~~~~~~~
+
 
 You may need to replace ``dnf`` with ``yum`` in the example below.
-
+```
 .. code-block:: console
 
     $ sudo dnf install graphviz graphviz-devel
-
+```
 
 > After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
 > 
@@ -91,7 +92,7 @@ You may need to replace ``dnf`` with ``yum`` in the example below.
 > TODO: pip install our package name
 > ```
 
-*Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specidifc instructions on downloading GraphViz.*
+*Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specific instructions on downloading GraphViz.*
 
 
 # License
