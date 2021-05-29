@@ -37,8 +37,8 @@ We recommend using Homebrew to install GraphViz.
 
 Open terminal and run the following command (assuming you have Homebrew installed)
 
-```bash
-$ brew install graphviz
+```zsh
+brew install graphviz
 ```
 
 > Important Note:
@@ -74,21 +74,16 @@ Below are examples for some popular distributions.
 
 Ubuntu and Debian
 
-```bash
-.. code-block:: console
-
-    $ sudo apt-get install graphviz graphviz-dev
-
+```zsh
+sudo apt-get install graphviz graphviz-dev
 ```
 
 Fedora and Red Hat
 
 
 You may need to replace ``dnf`` with ``yum`` in the example below.
-```bash
-.. code-block:: console
-
-    $ sudo dnf install graphviz graphviz-devel
+```zsh
+sudo dnf install graphviz graphviz-devel
 ```
 
 > After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
