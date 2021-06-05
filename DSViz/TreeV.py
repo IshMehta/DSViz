@@ -20,8 +20,14 @@ class TreeV:
         self.dot.node(parent,parent)
         if left is not None:        
             self.dot.edge(parent, left)
+        else:
+            self.dot.node(name = str(parent)+'invisl', lable = str(parent)+'invisl', style = 'invis')
+            self.dot.edge(str(parent), str(parent)+'invisl')
         if right is not None:
             self.dot.edge(parent, right)
+        else:
+            self.dot.node(name = str(parent)+'invisl', lable = str(parent)+'invisl', style = 'invis')
+            self.dot.edge(str(parent), str(parent)+'invisl')
 
     def show(self):
         self.dot.render('test-output/graph.gv', view=True)
