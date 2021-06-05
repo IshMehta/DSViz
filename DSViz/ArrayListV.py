@@ -1,5 +1,6 @@
 # import pygame
 
+from DSViz.NoneError import NoneError
 import tkinter as tk
 from tkinter.constants import BOTTOM, HORIZONTAL
 
@@ -90,6 +91,12 @@ class ArrayListV:
         window.mainloop()
 
     def addNode(self, node):
+        if node is None:
+            raise NoneError("Node in Array List cannot be None")
+
+        if not isinstance(node, (str, float, int)):
+            raise TypeError("Node in Array List has to be of type String, Integer or Float")
+            
         self.list.append(node)
                 
 
