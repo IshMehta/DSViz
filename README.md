@@ -17,9 +17,13 @@ This package can be used to visualise any implementations of the following:
     * Doubly Linked Lists
     * Circular Linked Lists
 * Trees
+    * Binary Trees
+    * AVL
+    * 2-4 Trees
 * Graphs
     * Directed Graphs
     * Undirected Graphs
+These are just a few examples data structures that can be visualised using DSViz.
 
 # Install
 
