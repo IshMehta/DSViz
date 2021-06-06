@@ -1,3 +1,4 @@
+from DSViz.NoneError import NoneError
 import tkinter as tk
 from tkinter.constants import BOTTOM, HORIZONTAL, RAISED
 from PIL import ImageTk, Image  
@@ -8,9 +9,26 @@ class LinkedListV:
     list = []
 
     def addNode(self, node, head = False, tail = False):
+        if node is None:
+            raise NoneError('Node in Linked List cannot be None')
+
+        if not isinstance(node, (str, float, int)):
+            raise TypeError("Node in Linked List has to be of type String, Integer or Float")
+        
         self.list.append(node)
 
     def show(self, DLL = False, CLL = False):
+
+        if not isinstance(DLL, bool):
+            if DLL is None:
+                raise NoneError('DLL parameter cannot be None')
+            raise TypeError('DLL parameter has to be True or False')
+        
+        if not isinstance(CLL, bool):
+            if CLL is None:
+                raise NoneError('CLL parameter cannot be None')
+            raise TypeError('CLL parameter has to be True or False')
+
         window = tk.Tk()
         window.geometry("1000x800")
         window.title("Linked List Visualiser")
