@@ -18,4 +18,10 @@ test.add('sleep', 'runmem')
 
 test.add( 'runmem', 'sleep')
 
-test.show()
+
+test.show
+
+test2 = GraphV()
+test2.add('new', ['runswap', 'runmem'])
+test2.add('runswap', ['runmem', 'new', 'swap'])
+# test2.show
