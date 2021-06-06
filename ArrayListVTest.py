@@ -8,4 +8,4 @@ test =  ArrayListV()
 for i in range(50):
     test.addNode(i * 2)
 
-test.show()
+test.show
