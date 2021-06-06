@@ -1,16 +1,16 @@
 graph {
 	run -- intr
+	run -- kernel
 	intr -- runbl
 	runbl -- run
-	run -- kernel
 	kernel -- zombie
 	kernel -- sleep
 	kernel -- runmem
 	sleep -- swap
+	sleep -- runmem
 	swap -- runswap
 	runswap -- new
 	runswap -- runmem
 	new -- runmem
-	sleep -- runmem
 	runmem -- sleep
 }

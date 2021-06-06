@@ -8,6 +8,10 @@ from PIL import ImageTk, Image
 class LinkedListV:
     list = []
 
+    def __init__(self, DLL = False, CLL = False):
+        self.DLL = DLL
+        self.CLL = CLL
+
     def addNode(self, node, head = False, tail = False):
         if node is None:
             raise NoneError('Node in Linked List cannot be None')
@@ -17,15 +21,16 @@ class LinkedListV:
         
         self.list.append(node)
 
-    def show(self, DLL = False, CLL = False):
+    @property
+    def show(self):
 
-        if not isinstance(DLL, bool):
-            if DLL is None:
+        if not isinstance(self.DLL, bool):
+            if self.DLL is None:
                 raise NoneError('DLL parameter cannot be None')
             raise TypeError('DLL parameter has to be True or False')
         
-        if not isinstance(CLL, bool):
-            if CLL is None:
+        if not isinstance(self.CLL, bool):
+            if self.CLL is None:
                 raise NoneError('CLL parameter cannot be None')
             raise TypeError('CLL parameter has to be True or False')
 
@@ -51,7 +56,7 @@ class LinkedListV:
         canvas.create_window((0,0), window = secondFrame, anchor="nw")
 
         #select correct arrow
-        if not DLL:
+        if not self.DLL:
             arrowImage = Image.open("resources/arrow.png")
         else:
             arrowImage = Image.open("resources/doubleArrow.png")
@@ -95,7 +100,7 @@ class LinkedListV:
                     )
         subframe.grid(row=1, column=len(self.list), sticky='nsew')
 
-        if CLL:
+        if self.CLL:
             label = tk.Label(master = subframe, text = "Head")
         else:
             label = tk.Label(master = subframe, text = "Null")

@@ -7,6 +7,7 @@ class ArrayListV:
     
     list = []
 
+    @property
     def show(self):
         window = tk.Tk()
         window.geometry("1000x800")

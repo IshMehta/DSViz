@@ -1,3 +1,4 @@
+
 from DSViz.NoneError import NoneError
 from graphviz import Graph
 from graphviz import Digraph
@@ -17,7 +18,7 @@ class GraphV:
             self.dot = Digraph(filename='output.gv', engine='sfdp')
         self.adjList = {}
     
-    #TODO: create graph from adjacency list
+    #TODO: should we seperate the adding by individual node and adding by list into 2 diff methods ?
 
     def add(self, parent, node):
         
@@ -33,19 +34,28 @@ class GraphV:
                     self.adjList[parent].append(node)
                 else:
                     self.adjList[parent] = [node]
+
+    # TODO: ISSUE- adj list implementation, creates double lines, shouldn't do that. 
+    
             elif isinstance(node, list):
-                for element in node:
-                    if isinstance(element, (str, float, int)):
-                        pass
-                    else:
-                        raise TypeError('Incorrect data type passed in adjacency list')
+                if parent in self.adjList.keys():
+                    for element in node:
+                        if isinstance(element, (str, float, int)):
+                            self.adjList[parent].append(node)
+                        else:
+                            raise TypeError('Incorrect data type passed in adjacency list')
+                else:
+                    for element in node:
+                        if not isinstance(element, (str, float, int)):
+                            raise TypeError('Incorrect data type passed in adjacency list')
+                    self.adjList[parent] = node
             else:
                 raise TypeError('Incorrect data type passed as child. Child has to be Integer, String, Float or List of the following.')
         else:
             raise TypeError('Incorrect data type passed as parent. Parent has to be Integer, String or Float.')
     
 
-    
+    @property
     def show(self):
         
         for parent in self.adjList.keys():
