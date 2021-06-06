@@ -1,4 +1,3 @@
-# import pygame
 
 from DSViz.NoneError import NoneError
 import tkinter as tk
@@ -6,36 +5,7 @@ from tkinter.constants import BOTTOM, HORIZONTAL
 
 class ArrayListV:
     
-    
-    # WHITE = (255, 255, 255)
-    # SCREEN_SIZE = (800,600)
-    # list = []
-
-    # def __init__(self):
-    #     pygame.init()
-        
-        
-    # def show(self):
-    #     screen = pygame.display.set_mode(self.SCREEN_SIZE)
-    #     screen.fill(self.WHITE)
-    #     pygame.display.set_caption("Array List")
-    #     pygame.display.update()
-    #     pygame
-    #     running = True
-    #     while running:
-    #         for event in pygame.event.get():
-    #             # print(event)
-    #             if event.type == pygame.QUIT:
-    #                 running = False
-    #     pygame.quit()
-
-    # def addNode(self, node):
-    #     self.list.append(node)
-
-
     list = []
-    WIDTH = 800
-    HEIGHT = 600
 
     def show(self):
         window = tk.Tk()
@@ -96,7 +66,7 @@ class ArrayListV:
 
         if not isinstance(node, (str, float, int)):
             raise TypeError("Node in Array List has to be of type String, Integer or Float")
-            
+
         self.list.append(node)
                 
 
