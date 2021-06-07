@@ -16,8 +16,6 @@ test.add('runswap', 'runmem')
 test.add('new', 'runmem')
 test.add('sleep', 'runmem')
 
-test.add( 'runmem', 'sleep')
-
 
 test.show
 
