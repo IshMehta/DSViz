@@ -4,6 +4,7 @@ from tkinter.constants import BOTTOM, HORIZONTAL, RAISED
 from PIL import ImageTk, Image  
 
 # TODO: throw necessary errors, example, invalid data entry, etc
+# TODO: increase font size
 
 class LinkedListV:
     list = []
