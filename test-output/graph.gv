@@ -1,15 +1,19 @@
-graph {
-	run -- intr
-	run -- kernel
-	intr -- runbl
-	runbl -- run
-	kernel -- zombie
-	kernel -- sleep
-	kernel -- runmem
-	sleep -- swap
-	sleep -- runmem
-	swap -- runswap
-	runswap -- new
-	runswap -- runmem
-	new -- runmem
+// Graph
+digraph {
+	a [label=a]
+	a -> b
+	ainvisl [lable=ainvisl style=invis]
+	a -> ainvisl
+	a [label=a]
+	a -> c
+	ainvisl [lable=ainvisl style=invis]
+	a -> ainvisl
+	b [label=b]
+	b -> d
+	binvisl [lable=binvisl style=invis]
+	b -> binvisl
+	d [label=d]
+	dinvisl [lable=dinvisl style=invis]
+	d -> dinvisl
+	d -> e
 }
