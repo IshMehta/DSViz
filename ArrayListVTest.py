@@ -3,9 +3,7 @@ from DSViz.ArrayListV import ArrayListV
 
 test =  ArrayListV()
 
-
-
-for i in range(50):
+for i in range(1,51):
     test.addNode(i * 2)
 
 test.show
