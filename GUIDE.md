@@ -80,3 +80,5 @@ test.show
 
 ![Graph Example](resources/GraphExample.png)
 
+
+> Important Note: This package is a work in progress. These examples are a simple illustration of the simplicity of the package. Our aim is to make the package simple and intuitive.
