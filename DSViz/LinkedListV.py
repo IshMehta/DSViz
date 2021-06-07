@@ -76,7 +76,7 @@ class LinkedListV:
                 borderwidth=5
             )
             sub_subframe1.grid(row=1, column=1, sticky='nsew')
-            label = tk.Label(master=sub_subframe1, text = "Node" + str(i))
+            label = tk.Label(master=sub_subframe1, text = str(self.list[i]))
             label.pack(fill=tk.BOTH)
 
             sub_subframe2 = tk.Frame(
