@@ -12,5 +12,4 @@ graph {
 	runswap -- new
 	runswap -- runmem
 	new -- runmem
-	runmem -- sleep
 }
