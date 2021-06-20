@@ -38,17 +38,26 @@ class GraphV:
     # TODO: ISSUE- adj list implementation, creates double lines, shouldn't do that. 
     
             elif isinstance(node, list):
-                if parent in self.adjList.keys():
-                    for element in node:
-                        if isinstance(element, (str, float, int)):
-                            self.adjList[parent].append(node)
-                        else:
-                            raise TypeError('Incorrect data type passed in adjacency list')
-                else:
-                    for element in node:
-                        if not isinstance(element, (str, float, int)):
-                            raise TypeError('Incorrect data type passed in adjacency list')
-                    self.adjList[parent] = node
+                # if parent exists, add
+                if parent not in self.adjList.keys():
+                    self.adjList[parent] = []
+
+                for element in node:
+                    if isinstance(element, (str, float, int)):
+                        self.adjList[parent].append(element)
+                    else:
+                        raise TypeError('Incorrect data type passed in adjacency list')
+                '''
+
+                delete this part
+
+                # else:
+
+                #     for element in node:
+                #         if not isinstance(element, (str, float, int)):
+                #             raise TypeError('Incorrect data type passed in adjacency list')
+                #     self.adjList[parent] = [node]
+                '''
             else:
                 raise TypeError('Incorrect data type passed as child. Child has to be Integer, String, Float or List of the following.')
         else:
@@ -57,8 +66,9 @@ class GraphV:
 
     @property
     def show(self):
-        
+        # print(self.adjList)
         for parent in self.adjList.keys():
+            
             [self.dot.edge(parent, node) for node in self.adjList[parent]]
 
         self.dot.render('test-output/graph.gv', view=True)

@@ -1,19 +1,16 @@
-// Graph
-digraph {
-	a [label=a]
-	a -> b
-	ainvisl [lable=ainvisl style=invis]
-	a -> ainvisl
-	a [label=a]
-	a -> c
-	ainvisl [lable=ainvisl style=invis]
-	a -> ainvisl
-	b [label=b]
-	b -> d
-	binvisl [lable=binvisl style=invis]
-	b -> binvisl
-	d [label=d]
-	dinvisl [lable=dinvisl style=invis]
-	d -> dinvisl
-	d -> e
+graph {
+	0 -- 1
+	0 -- 4
+	1 -- 0
+	1 -- 4
+	1 -- 3
+	1 -- 2
+	2 -- 1
+	2 -- 3
+	3 -- 1
+	3 -- 2
+	3 -- 4
+	4 -- 0
+	4 -- 1
+	4 -- 3
 }
