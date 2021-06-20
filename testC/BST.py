@@ -12,8 +12,28 @@ class BST:
         
     def add(self, value):
         node = self.Node(value)
-        if self.root is None:
+        curr = self.root
+
+        while curr is not None or curr == value:
+            if value < curr.value:
+                curr = curr.left
+            elif value > curr.value:
+                curr = curr.right
+
+        if curr is None:
             self.root = node
+        
+    def preorder(self, curr):
+        preorder(curr.left)
+        preorder(curr.right)
+        preorder(curr)
+        
+            
+
+    # def addHelper(self, curr, value):
+
+        
+            
 
 
 
