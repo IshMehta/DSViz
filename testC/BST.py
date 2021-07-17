@@ -1,3 +1,6 @@
+
+
+
 class BST:
     class Node:
         def __init__(self, value):
@@ -24,9 +27,9 @@ class BST:
             self.root = node
         
     def preorder(self, curr):
-        preorder(curr.left)
-        preorder(curr.right)
-        preorder(curr)
+        self.preorder(curr.left)
+        self.preorder(curr.right)
+        self.preorder(curr)
         
             
 

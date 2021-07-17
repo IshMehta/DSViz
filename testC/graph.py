@@ -13,22 +13,32 @@ class graph:
 
     def visuliase(self, start):
         viz = GraphV()
+        edgeSet = set()
         VS = set()
         stack = []
         
         curr = start
         # print(self.adjlist[curr])
-        VS.add(curr)
+        
         stack.append(curr)
         
         while len(stack) != 0:
+            # print(stack)
+            curr = stack.pop(-1)
+            VS.add(curr)
             for adjacent in self.adjlist[curr]:
-                # if adjacent not in VS:
-                    # VS.add(adjacent)
-                stack.append(adjacent)
-                viz.add(curr, adjacent)
-            curr = stack[-1]
-            stack.pop(len(stack) - 1)
+                found = False
+                for element in edgeSet:
+                    if curr in element and adjacent in element:
+                        found = True
+
+                if not found:
+                    viz.add(curr, adjacent)
+                if adjacent not in VS:
+                    stack.append(adjacent)
+                edgeSet.add((adjacent, curr))
+                print(edgeSet)
+            
 
         viz.show
         
