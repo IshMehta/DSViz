@@ -12,8 +12,9 @@ setup(
   download_url = '',    
   keywords = [],   # Keywords that define your package best
   install_requires=[    
-      'tkinter',
-      'graphviz'        
+      'tk',
+      'graphviz',
+      'pillow'        
       ],
   classifiers=[
 
