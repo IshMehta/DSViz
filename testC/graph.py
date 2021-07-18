@@ -8,11 +8,12 @@ class graph:
             self.value = value
             self.next = {}
         
-    def __init__(self, adjlist):
+    def __init__(self, adjlist, directed = False):
         self.adjlist = adjlist
+        self.directed = directed
 
     def visuliase(self, start):
-        viz = GraphV()
+        viz = GraphV(Directed=self.directed)
         edgeSet = set()
         VS = set()
         stack = []

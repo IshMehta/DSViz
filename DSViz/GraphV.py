@@ -18,7 +18,7 @@ class GraphV:
         self.dot = Graph(filename='output.gv')
         if Directed is True:
             # self.dot = Digraph(filename='output.gv', engine='sfdp')
-            self.dot = Graph(filename='output.gv')
+            self.dot = Digraph(filename='output.gv')
         self.adjList = {}
     
     #TODO: should we seperate the adding by individual node and adding by list into 2 diff methods ?
@@ -38,7 +38,8 @@ class GraphV:
                 else:
                     self.adjList[parent] = [node]
 
-    # TODO: ISSUE- adj list implementation, creates double lines, shouldn't do that. 
+    # TODO: ISSUE- adj list implementation, creates double lines, shouldn't do that. OR remove adjlist implementation
+    
     
             elif isinstance(node, list):
                 # if parent exists, add
