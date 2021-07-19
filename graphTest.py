@@ -6,8 +6,8 @@ adjlist = {'0': ['1','4'],
            '2': ['1','3'],
            '3': ['1','2','4'],
            '4': ['0','1','3']}
-# test = graph(adjlist)
-# test.visuliase('4')
+test = graph(adjlist)
+test.visuliase('4')
 
 adjlist2 = {'A': ['B'], 
             'B': ['C'],
@@ -17,5 +17,5 @@ adjlist2 = {'A': ['B'],
             'F':[]
             }
 
-test2 = graph(adjlist2, directed=True)
-test2.visuliase('A')
+# test2 = graph(adjlist2, directed=True)
+# test2.visuliase('A')
