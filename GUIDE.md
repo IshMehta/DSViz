@@ -1,4 +1,4 @@
-# Guide to Data Structure Visualiser
+ # Guide to Data Structure Visualiser
 
 DSViz is a simple and intuitive Python interface to multiple packages in order to help visualise different data structres while codng them. This package is developed mainly for students or developers who are in the process of learning data structures. 
 
@@ -110,12 +110,13 @@ class graph:
                 if adjacent not in VS:
                     stack.append(adjacent)
                 edgeSet.add((adjacent, curr))
-                print(edgeSet)
-            
+
+
 
         viz.show
 ```
-One can then utilise this visualise method created.
+
+One can then utilise this 'visualise' method created.
 
 ```python
 adjlist = {'0': ['1','4'],
@@ -128,4 +129,23 @@ test.visuliase('4')
 ```
 
 
+<img src ="resources/GraphExample.jpg" width="500"/>
+
+A similar approach can be followed to visualise any form of graph regardless of its implementation specifics.
+
 > Important Note: This package is a work in progress. These examples are a simple illustration of the simplicity of the package. Our aim is to make the package simple and intuitive.
+
+
+
+
+
+
+
+
+                
+            
+
+
+
+
+ 
