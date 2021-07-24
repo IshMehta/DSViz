@@ -10,13 +10,17 @@ setup(
   author_email = 'ish.mehta2310@gmail.com',      
   url = 'https://github.com/IshMehta/DataStructureViz',   
   download_url = '',    
-  keywords = [],   # Keywords that define your package best
+  keywords = ['data structure', 'graph','list','array','tree','BST','AVL','binary','draw','visualise'],
   install_requires=[    
       'tk',
       'graphviz',
       'pillow'        
       ],
   classifiers=[
-
+    'Development Status :: 3 - Alpha',
+    'Intended Audience :: Developers, students',
+    'Topic :: Software Developement :: Helper Tools',
+    'License :: MIT Licence',
+    'Programming Language :: Python :: 3',
   ],
 )
