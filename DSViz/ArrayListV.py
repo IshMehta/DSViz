@@ -57,7 +57,6 @@ class ArrayListV:
         else :
             label = tk.Label(master = main_frame, text = "Array List is empty.")
             label.pack(fill=tk.BOTH)
-            # label.grid(row=1, column=1)
 
         window.mainloop()
 
