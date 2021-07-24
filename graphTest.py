@@ -6,7 +6,7 @@ adjlist = {'0': ['1','4'],
            '2': ['1','3'],
            '3': ['1','2','4'],
            '4': ['0','1','3']}
-test = graph(adjlist)
+test = graph(adjlist)   
 test.visuliase('4')
 
 adjlist2 = {'A': ['B'], 

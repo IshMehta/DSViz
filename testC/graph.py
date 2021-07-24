@@ -1,5 +1,4 @@
-import sys
-sys.path.append('..')
+
 from DSViz.GraphV import GraphV
 
 class graph:

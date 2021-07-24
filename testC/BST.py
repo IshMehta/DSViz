@@ -1,5 +1,6 @@
 
 
+from DSViz.TreeV import TreeV
 
 class BST:
     class Node:
@@ -12,28 +13,39 @@ class BST:
 
     def __init__(self):
         self.root = None
+        self.viz = TreeV()
+         
         
-    def add(self, value):
-        node = self.Node(value)
-        curr = self.root
-
-        while curr is not None or curr == value:
-            if value < curr.value:
-                curr = curr.left
-            elif value > curr.value:
-                curr = curr.right
-
+    def postorderVisualiser(self, curr):
         if curr is None:
-            self.root = node
-        
-    def preorder(self, curr):
-        self.preorder(curr.left)
-        self.preorder(curr.right)
-        self.preorder(curr)
-        
+            return
+        else:
+            if curr.left is None and curr.right is None:
+                self.viz.add(curr.value)
+            else:
+                if curr.left is None:
+                    self.viz.add(curr.value, right= curr.right.value)
+                elif curr.right is None:
+                    self.viz.add(curr.value, left= curr.left.value)
+                else:    
+                    self.viz.add(curr.value, curr.left.value, curr.right.value)
+                self.postorderVisualiser(curr.left)
+                self.postorderVisualiser(curr.right)
             
+    def renderTree(self):
+        self.viz.show
+            
+    def add(self, value):
+        self.root = self.addHelper(self.root, value)
 
-    # def addHelper(self, curr, value):
+    def addHelper(self, curr, value):
+        if curr is None:
+            return self.Node(value)
+        elif value < curr.value:
+            curr.left = self.addHelper(curr.left, value)
+        elif value > curr.value:
+            curr.right = self.addHelper(curr.right, value)
+        return curr
 
         
             
