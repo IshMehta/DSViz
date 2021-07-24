@@ -62,7 +62,7 @@ test.add("d", right="e")
 test.show()
 ```
 
-<img src='resources/TreeExample.PNG' width='500'/>
+<img src='resources/TreeExample.png' width='500'/>
 
 A more detailed and practical example is shown below.
 
@@ -129,7 +129,7 @@ test.renderTree()
 
 This results in the following render.
 
-<img src='TreeExample2.png' width='500'>
+<img src='resources/TreeExample2.PNG' width='500'>
 
 ## Graph
 
