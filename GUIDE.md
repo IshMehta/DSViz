@@ -129,7 +129,7 @@ test.renderTree()
 
 This results in the following render.
 
-<img src='' width='500'>
+<img src='TreeExample2.png' width='500'>
 
 ## Graph
 
