@@ -57,12 +57,10 @@ class LinkedListV:
 
         #select correct arrow
         if not self.DLL:
-            # arrowImage = Image.open("DSViz/arrow.png")
             with resources.open_binary('DSViz','arrow.png') as fp:
                 arrowImage = fp.read()
             arrowImage = Image.open(io.BytesIO(arrowImage))
         else:
-            # arrowImage = Image.open("DSViz/doubleArrow.png")
             with resources.open_binary('DSViz','doubleArrow.png') as fp:
                 arrowImage = fp.read()
             arrowImage = Image.open(io.BytesIO(arrowImage))
