@@ -1,14 +1,31 @@
-from DSViz.GraphV import GraphV
+
 from testC.graph import graph
-from DSViz.GraphV import GraphV
+
 adjlist = {'0': ['1','4'],
            '1': ['0','4','3','2'],
            '2': ['1','3'],
            '3': ['1','2','4'],
            '4': ['0','1','3']}
-test = graph(adjlist)   
-test.visuliase('4')
 
+# adjlist = {'A': ['B'], 
+#             'B': ['C'],
+#             'C': ['E'],
+#             'D': ['B'],
+#             'E': ['D', 'F'],
+#             'F':[]
+#             }
+test = graph(adjlist)
+test.visualise('1')
+
+
+with open ('DSViz/test-output/graph.gv') as f:
+    # lines = f.read().rstrip()
+    result = f.readlines()
+print(result)
+if result == ['graph {\n', '\t4 -- 0\n', '\t4 -- 1\n', '\t4 -- 3\n', '\t3 -- 1\n', '\t3 -- 2\n', '\t2 -- 1\n', '\t1 -- 0\n', '}\n']:
+    print("True")
+else:
+    print('False')
 adjlist2 = {'A': ['B'], 
             'B': ['C'],
             'C': ['E'],

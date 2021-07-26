@@ -5,10 +5,12 @@ class graph:
 
     def __init__(self, adjlist, directed = False):
         self.adjlist = adjlist
-        self.directed = directed
+        self.viz = GraphV(Directed=directed)
+        self.source = None
+        
 
-    def visuliase(self, start):
-        viz = GraphV(Directed=self.directed)
+    def visualise(self, start):
+        
         edgeSet = set()
         VS = set()
         stack = []
@@ -24,12 +26,10 @@ class graph:
                     if curr in element and adjacent in element:
                         found = True
                 if not found:
-                    viz.add(curr, adjacent)
+                    self.viz.add(curr, adjacent)
                 if adjacent not in VS:
                     stack.append(adjacent)
                 edgeSet.add((adjacent, curr))
-                print(edgeSet)
-            
-
-        viz.show
         
+        self.viz.show
+    

@@ -44,6 +44,5 @@ class GraphV:
         for parent in self.adjList.keys():
             
             [self.dot.edge(parent, node) for node in self.adjList[parent]]
-        print(self.dot.source)
-        self.dot.render('test-output/graph.gv', view=True)
+        self.dot.render('DSViz/test-output/graph.gv', view=True)
 

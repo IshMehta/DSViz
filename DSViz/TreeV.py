@@ -35,6 +35,6 @@ class TreeV:
 
     @property
     def show(self):
-        self.dot.render('test-output/graph.gv', view=True)
+        self.dot.render('DSViz/test-output/graph.gv', view=True)
         print(self.dot.source)
 

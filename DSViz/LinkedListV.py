@@ -2,7 +2,8 @@ from DSViz.NoneError import NoneError
 import tkinter as tk
 from tkinter.constants import BOTTOM, HORIZONTAL, RAISED
 from PIL import ImageTk, Image  
-
+from importlib import resources
+import io
 
 class LinkedListV:
     list = []
@@ -56,9 +57,15 @@ class LinkedListV:
 
         #select correct arrow
         if not self.DLL:
-            arrowImage = Image.open("resources/arrow.png")
+            # arrowImage = Image.open("DSViz/arrow.png")
+            with resources.open_binary('DSViz','arrow.png') as fp:
+                arrowImage = fp.read()
+            arrowImage = Image.open(io.BytesIO(arrowImage))
         else:
-            arrowImage = Image.open("resources/doubleArrow.png")
+            # arrowImage = Image.open("DSViz/doubleArrow.png")
+            with resources.open_binary('DSViz','doubleArrow.png') as fp:
+                arrowImage = fp.read()
+            arrowImage = Image.open(io.BytesIO(arrowImage))
         arrowImage = arrowImage.resize((50,50))
 
         tailIndex = 0
