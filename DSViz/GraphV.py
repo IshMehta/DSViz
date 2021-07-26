@@ -13,12 +13,11 @@ class GraphV:
                 raise NoneError('Directed parameter cannot be None')
             raise TypeError("Directed parameter has to be True or False")
 
-        self.dot = Graph(filename='output.gv', engine='sfdp')
+        self.dot = Graph(filename='output.gv')
         if Directed is True:
-            self.dot = Digraph(filename='output.gv', engine='sfdp')
+            self.dot = Digraph(filename='output.gv')
         self.adjList = {}
     
-    #TODO: should we seperate the adding by individual node and adding by list into 2 diff methods ?
 
     def add(self, parent, node):
         
@@ -34,21 +33,6 @@ class GraphV:
                     self.adjList[parent].append(node)
                 else:
                     self.adjList[parent] = [node]
-
-    # TODO: ISSUE- adj list implementation, creates double lines, shouldn't do that. 
-    
-            elif isinstance(node, list):
-                if parent in self.adjList.keys():
-                    for element in node:
-                        if isinstance(element, (str, float, int)):
-                            self.adjList[parent].append(node)
-                        else:
-                            raise TypeError('Incorrect data type passed in adjacency list')
-                else:
-                    for element in node:
-                        if not isinstance(element, (str, float, int)):
-                            raise TypeError('Incorrect data type passed in adjacency list')
-                    self.adjList[parent] = node
             else:
                 raise TypeError('Incorrect data type passed as child. Child has to be Integer, String, Float or List of the following.')
         else:
@@ -57,9 +41,8 @@ class GraphV:
 
     @property
     def show(self):
-        
         for parent in self.adjList.keys():
+            
             [self.dot.edge(parent, node) for node in self.adjList[parent]]
-
-        self.dot.render('test-output/graph.gv', view=True)
+        self.dot.render('DSViz/test-output/graph.gv', view=True)
 
