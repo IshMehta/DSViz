@@ -20,10 +20,10 @@ setup(
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',
-    'Intended Audience :: Developers, students',
-    'Topic :: Software Developement :: Helper Tools',
-    'License :: OSI Approved :: MIT Licence',
-    'Operating System :: OS Independent'
+    'Intended Audience :: Education',
+    'Topic :: Education',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
     'Programming Language :: Python :: 3',
   ],
   long_description=long_description,
