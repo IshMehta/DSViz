@@ -25,6 +25,13 @@ This package can be used to visualise any implementations of the following:
     * Undirected Graphs
 These are just a few examples data structures that can be visualised using DSViz.
 
+# Links
+
+- GitHub: https://github.com/IshMehta/DataStructureViz
+- PyPI:
+- Documentation: 
+
+
 # Install
 
 
@@ -45,8 +52,6 @@ Open terminal and run the following command (assuming you have Homebrew installe
 brew install graphviz
 ```
 
-> Important Note:
-> 
 
 ## Windows
 
