@@ -1,0 +1,55 @@
+site_name: DataStructureViz
+site_url: https://dsviz.com
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Getting Started: guide.md
+  - Documentation:
+    - Package Structure: structure.md
+    - ArrayListV: array.md
+    - LinkedListV: list.md
+    - TreeV: tree.md
+    - GraphV: graph.md
+  - Examples: 
+    - about: about.md
+  - License: license.md
+# theme: readthedocs
+theme: 
+  features:
+    - navigation.top
+  name: material #pip install mkdocs-material
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+
+    - scheme: default
+
+      toggle:
+
+        icon: material/toggle-switch-off-outline
+
+        name: Switch to dark mode
+    - scheme: slate
+
+      toggle:
+
+        icon: material/toggle-switch
+
+        name: Switch to light mode
+  
+repo_url: https://github.com/IshMehta/DataStructureViz
+repo_name: IshMehta/DataStructureViz
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/IshMehta/DataStructureViz
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/ish-mehta-529766166
+
+copyright: Copyright &copy; 2021 Ish Mehta
+
+use_pygments: true
+
+markdown_extensions:
+  - admonition
