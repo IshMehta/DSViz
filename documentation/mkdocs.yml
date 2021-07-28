@@ -11,12 +11,19 @@ nav:
     - TreeV: tree.md
     - GraphV: graph.md
   - Examples: 
-    - about: about.md
+    - Binary Search Tree Example: BSTExample.md
+    - Undirected Graph: undirected_graph.md
+    - Directed Graph: directed_graph.md
   - License: license.md
-# theme: readthedocs
+
 theme: 
+  logo: Capture3.PNG
+  favicon: Capture3.PNG
   features:
     - navigation.top
+    - navigation.tracking
+    # - navigation.tabs
+    
   name: material #pip install mkdocs-material
   icon:
     repo: fontawesome/brands/github
