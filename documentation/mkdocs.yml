@@ -17,12 +17,12 @@ nav:
   - License: license.md
 
 theme: 
-  logo: Capture3.PNG
-  favicon: Capture3.PNG
+  logo: Capture5.png
+  favicon: Capture5.png
   features:
     - navigation.top
     - navigation.tracking
-    # - navigation.tabs
+    - navigation.tabs
     
   name: material #pip install mkdocs-material
   icon:
