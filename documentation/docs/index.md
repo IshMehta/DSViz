@@ -25,4 +25,4 @@ This package can be used to visualise any implementations of the following:
 
 - GitHub: [https://github.com/IshMehta/DataStructureViz](https://github.com/IshMehta/DataStructureViz)
 - PyPI:
-- Documentation: 
+- Documentation: [https://ishmehta.github.io/DataStructureViz/](https://ishmehta.github.io/DataStructureViz/)
