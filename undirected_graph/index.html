@@ -575,49 +575,49 @@
                 
                 
                 <h1 id="undirected-graph-example">Undirected Graph Example</h1>
-<pre><code class="language-python">from DSViz import GraphV
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">DSViz</span> <span class="kn">import</span> <span class="n">GraphV</span>
 
-class graph:
+<span class="k">class</span> <span class="nc">graph</span><span class="p">:</span>
 
-    def __init__(self, adjlist, directed = False):
-        self.adjlist = adjlist
-        self.directed = directed
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">adjlist</span><span class="p">,</span> <span class="n">directed</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adjlist</span> <span class="o">=</span> <span class="n">adjlist</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">directed</span> <span class="o">=</span> <span class="n">directed</span>
 
-    def visuliase(self, start):
-        viz = GraphV(Directed=self.directed)
-        edgeSet = set()
-        VS = set()
-        stack = []
+    <span class="k">def</span> <span class="nf">visuliase</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start</span><span class="p">):</span>
+        <span class="n">viz</span> <span class="o">=</span> <span class="n">GraphV</span><span class="p">(</span><span class="n">Directed</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">directed</span><span class="p">)</span>
+        <span class="n">edgeSet</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="n">VS</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+        <span class="n">stack</span> <span class="o">=</span> <span class="p">[]</span>
 
-        curr = start
-        stack.append(curr)
-        while len(stack) != 0:
-            curr = stack.pop(-1)
-            VS.add(curr)
-            for adjacent in self.adjlist[curr]:
-                found = False
-                for element in edgeSet:
-                    if curr in element and adjacent in element:
-                        found = True
-                if not found:
-                    viz.add(curr, adjacent)
-                if adjacent not in VS:
-                    stack.append(adjacent)
-                edgeSet.add((adjacent, curr))
+        <span class="n">curr</span> <span class="o">=</span> <span class="n">start</span>
+        <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">curr</span><span class="p">)</span>
+        <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">stack</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">curr</span> <span class="o">=</span> <span class="n">stack</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">VS</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">curr</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">adjacent</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">adjlist</span><span class="p">[</span><span class="n">curr</span><span class="p">]:</span>
+                <span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
+                <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">edgeSet</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="n">curr</span> <span class="ow">in</span> <span class="n">element</span> <span class="ow">and</span> <span class="n">adjacent</span> <span class="ow">in</span> <span class="n">element</span><span class="p">:</span>
+                        <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">found</span><span class="p">:</span>
+                    <span class="n">viz</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">adjacent</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">adjacent</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">VS</span><span class="p">:</span>
+                    <span class="n">stack</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">adjacent</span><span class="p">)</span>
+                <span class="n">edgeSet</span><span class="o">.</span><span class="n">add</span><span class="p">((</span><span class="n">adjacent</span><span class="p">,</span> <span class="n">curr</span><span class="p">))</span>
 
 
 
-        viz.show
-</code></pre>
+        <span class="n">viz</span><span class="o">.</span><span class="n">show</span>
+</code></pre></div>
 <p>One can then utilise this 'visualise' method created.</p>
-<pre><code class="language-python">adjlist = {'0': ['1','4'],
-           '1': ['0','4','3','2'],
-           '2': ['1','3'],
-           '3': ['1','2','4'],
-           '4': ['0','1','3']}
-test = graph(adjlist)
-test.visuliase('4')
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">adjlist</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;0&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;3&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;2&#39;</span><span class="p">,</span><span class="s1">&#39;4&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;4&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span><span class="s1">&#39;1&#39;</span><span class="p">,</span><span class="s1">&#39;3&#39;</span><span class="p">]}</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">graph</span><span class="p">(</span><span class="n">adjlist</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">visuliase</span><span class="p">(</span><span class="s1">&#39;4&#39;</span><span class="p">)</span>
+</code></pre></div>
 <p><img src ="https://github.com/IshMehta/DataStructureViz/blob/main/resources/GraphExample.jpg?raw=true" width="350"/></p>
 <p>A similar approach can be followed to visualise any form of graph regardless of its implementation specifics.</p>
                 

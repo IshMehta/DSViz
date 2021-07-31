@@ -670,14 +670,14 @@
 <p>Here are a few examples...</p>
 <h2 id="array-list">Array List</h2>
 <p>Goal: Array List which stores even numbers from 2-100</p>
-<pre><code class="language-python">test =  ArrayListV()
+<p><div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span>  <span class="n">ArrayListV</span><span class="p">()</span>
 
-for i in range(1,51):
-    test.addNode(i * 2)
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
+    <span class="n">test</span><span class="o">.</span><span class="n">addNode</span><span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
 
-test.show
-</code></pre>
-<p><img alt="Array List Example" src="https://github.com/IshMehta/DataStructureViz/blob/main/resources/ArrayListExample.gif?raw=true" /></p>
+<span class="n">test</span><span class="o">.</span><span class="n">show</span>
+</code></pre></div>
+<img alt="Array List Example" src="https://github.com/IshMehta/DataStructureViz/blob/main/resources/ArrayListExample.gif?raw=true" /></p>
 <h2 id="linked-list">Linked List</h2>
 <p>Goal: Circular Doubly Linked List which stores alphabets from a-z</p>
 <blockquote>
@@ -687,23 +687,23 @@ test.show
 <blockquote>
 <p>LinkedListV object upon creation has default CLL = False and DLL = False. These can be toggled upon object creation to change the how the pointers in the visualisation.</p>
 </blockquote>
-<pre><code class="language-python">test = LinkedListV(CLL=True, DLL=True)
+<p><div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">LinkedListV</span><span class="p">(</span><span class="n">CLL</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">DLL</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-for i in range(97, 123):
-    test.addNode(chr(i))
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">123</span><span class="p">):</span>
+    <span class="n">test</span><span class="o">.</span><span class="n">addNode</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
 
-test.show
-</code></pre>
-<p><img alt="Linked List Example" src="https://github.com/IshMehta/DataStructureViz/blob/main/resources/LinkedListExample.gif?raw=true" /></p>
+<span class="n">test</span><span class="o">.</span><span class="n">show</span>
+</code></pre></div>
+<img alt="Linked List Example" src="https://github.com/IshMehta/DataStructureViz/blob/main/resources/LinkedListExample.gif?raw=true" /></p>
 <h2 id="tree">Tree</h2>
 <p>Goal: Visualise a tree</p>
-<pre><code class="language-python">test = TreeV()
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">TreeV</span><span class="p">()</span>
 
-test.add(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;)
-test.add(&quot;b&quot;, left=&quot;d&quot;)
-test.add(&quot;d&quot;, right=&quot;e&quot;)
-test.show()
-</code></pre>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="s2">&quot;d&quot;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="n">right</span><span class="o">=</span><span class="s2">&quot;e&quot;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
 <p><img src='https://github.com/IshMehta/DataStructureViz/blob/main/resources/TreeExample.png?raw=true' width='500'/></p>
 <h2 id="graph">Graph</h2>
 <p>Goal: Visualise an undirected graph</p>
@@ -711,24 +711,24 @@ test.show()
 <p>add(node1, node2) : creates an edge between two nodes, if the node exists, it creates an edge between the two, if node does not exist, it creates the node and the edge.</p>
 </blockquote>
 <p>We suggest you to use the add method while iterating over your graph using BFS or DFS as per your choice. The below example is just a simple explanation of how the add method works.</p>
-<pre><code class="language-python">test = GraphV()
+<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">GraphV</span><span class="p">()</span>
 
-test.add('run', 'intr')
-test.add('intr', 'runbl')
-test.add('runbl', 'run')
-test.add('run', 'kernel')
-test.add('kernel', 'zombie')
-test.add('kernel', 'sleep')
-test.add('kernel', 'runmem')
-test.add('sleep', 'swap')
-test.add('swap', 'runswap')
-test.add('runswap', 'new')
-test.add('runswap', 'runmem')
-test.add('new', 'runmem')
-test.add('sleep', 'runmem')
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;intr&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;intr&#39;</span><span class="p">,</span> <span class="s1">&#39;runbl&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;runbl&#39;</span><span class="p">,</span> <span class="s1">&#39;run&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;kernel&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;kernel&#39;</span><span class="p">,</span> <span class="s1">&#39;zombie&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;kernel&#39;</span><span class="p">,</span> <span class="s1">&#39;sleep&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;kernel&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">,</span> <span class="s1">&#39;swap&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;swap&#39;</span><span class="p">,</span> <span class="s1">&#39;runswap&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;runswap&#39;</span><span class="p">,</span> <span class="s1">&#39;new&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;runswap&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;new&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;sleep&#39;</span><span class="p">,</span> <span class="s1">&#39;runmem&#39;</span><span class="p">)</span>
 
-test.show
-</code></pre>
+<span class="n">test</span><span class="o">.</span><span class="n">show</span>
+</code></pre></div>
 <p><img alt="Graph Example" src="https://github.com/IshMehta/DataStructureViz/blob/main/resources/GraphExample.png?raw=trueg" /></p>
                 
               

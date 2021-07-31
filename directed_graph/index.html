@@ -575,42 +575,42 @@
                 
                 
                 <h1 id="directed-graph-example">Directed Graph Example</h1>
-<pre><code class="language-python">from DSViz.GraphV import GraphV
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">DSViz.GraphV</span> <span class="kn">import</span> <span class="n">GraphV</span>
 
-class directedGraph:
+<span class="k">class</span> <span class="nc">directedGraph</span><span class="p">:</span>
 
-    def __init__(self, adjlist, directed = False):
-        self.adjlist = adjlist
-        self.viz = GraphV(Directed=directed)
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">adjlist</span><span class="p">,</span> <span class="n">directed</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">adjlist</span> <span class="o">=</span> <span class="n">adjlist</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">viz</span> <span class="o">=</span> <span class="n">GraphV</span><span class="p">(</span><span class="n">Directed</span><span class="o">=</span><span class="n">directed</span><span class="p">)</span>
 
-    def show(self):
-        for node in self.adjlist:
-            for element in self.adjlist[node]:
-                self.viz.add(node, element)
-        self.viz.show
-</code></pre>
+    <span class="k">def</span> <span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">adjlist</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">adjlist</span><span class="p">[</span><span class="n">node</span><span class="p">]:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">viz</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">element</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">viz</span><span class="o">.</span><span class="n">show</span>
+</code></pre></div>
 <p>One can then utilise this 'show' method created.</p>
-<pre><code class="language-python">adjlist3 = {
- 1 : [6,4],  
- 2: [9,7,5],
- 3: [5,8],
- 4: [9],
- 5: [13],
- 6: [10,9],
- 7: [11,12,13],
- 8: [14],
- 9: [15],
- 10: [],
- 11: [15],
- 12: [],
- 13: [],
- 14:[],
- 15:[]
-}
+<div class="highlight"><pre><span></span><code><span class="n">adjlist3</span> <span class="o">=</span> <span class="p">{</span>
+ <span class="mi">1</span> <span class="p">:</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>  
+ <span class="mi">2</span><span class="p">:</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+ <span class="mi">3</span><span class="p">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+ <span class="mi">4</span><span class="p">:</span> <span class="p">[</span><span class="mi">9</span><span class="p">],</span>
+ <span class="mi">5</span><span class="p">:</span> <span class="p">[</span><span class="mi">13</span><span class="p">],</span>
+ <span class="mi">6</span><span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span><span class="mi">9</span><span class="p">],</span>
+ <span class="mi">7</span><span class="p">:</span> <span class="p">[</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">13</span><span class="p">],</span>
+ <span class="mi">8</span><span class="p">:</span> <span class="p">[</span><span class="mi">14</span><span class="p">],</span>
+ <span class="mi">9</span><span class="p">:</span> <span class="p">[</span><span class="mi">15</span><span class="p">],</span>
+ <span class="mi">10</span><span class="p">:</span> <span class="p">[],</span>
+ <span class="mi">11</span><span class="p">:</span> <span class="p">[</span><span class="mi">15</span><span class="p">],</span>
+ <span class="mi">12</span><span class="p">:</span> <span class="p">[],</span>
+ <span class="mi">13</span><span class="p">:</span> <span class="p">[],</span>
+ <span class="mi">14</span><span class="p">:[],</span>
+ <span class="mi">15</span><span class="p">:[]</span>
+<span class="p">}</span>
 
-test = directedGraph(adjlist3, directed=True)
-test.show()
-</code></pre>
+<span class="n">test</span> <span class="o">=</span> <span class="n">directedGraph</span><span class="p">(</span><span class="n">adjlist3</span><span class="p">,</span> <span class="n">directed</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</code></pre></div>
 <p><img src ="https://github.com/IshMehta/DataStructureViz/blob/main/resources/directedGraphExample.PNG?raw=true" width="700"/></p>
 <p>A similar approach can be followed to visualise any form of graph regardless of its implementation specifics.</p>
                 
