@@ -1,6 +1,6 @@
 
 
-from DSViz.TreeV import TreeV
+from DSViz.BinaryTreeV import BinaryTreeV
 
 class BST:
     class Node:
@@ -13,7 +13,7 @@ class BST:
 
     def __init__(self):
         self.root = None
-        self.viz = TreeV()
+        self.viz = BinaryTreeV()
          
         
     def postorderVisualiser(self, curr):
