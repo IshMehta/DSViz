@@ -28,8 +28,8 @@ These are just a few examples data structures that can be visualised using DSViz
 # Links
 
 - GitHub: https://github.com/IshMehta/DataStructureViz
-- PyPI:
-- Documentation: 
+- PyPI: https://pypi.org/project/DataStructureViz/
+- Documentation: https://ishmehta.github.io/DataStructureViz/binaryTree/
 
 
 # Install
@@ -94,17 +94,12 @@ You may need to replace ``dnf`` with ``yum`` in the example below.
 ```zsh
 sudo dnf install graphviz graphviz-devel
 ```
+## Finally
+After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
 
-> After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
-> 
-> ```bash
-> TODO: $ pip install our package name
-> ```
+```bash
+ $ pip install DataStructureViz
+```
 
 *Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specific instructions on downloading GraphViz.*
-
-
-# License
-
-This package is distributed under the [MIT License](https://github.com/IshMehta/DataStructureViz/blob/main/LICENSE)
 

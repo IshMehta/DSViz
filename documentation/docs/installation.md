@@ -60,10 +60,11 @@ You may need to replace ``dnf`` with ``yum`` in the example below.
 sudo dnf install graphviz graphviz-devel
 ```
 
-> After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
-> 
-> ```bash
-> TODO: $ pip install our package name
-> ```
+## Finally
+After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
+
+```bash
+ $ pip install DataStructureViz
+```
 
 *Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specific instructions on downloading GraphViz.*
