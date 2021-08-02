@@ -6,7 +6,7 @@ The following list are the class names:
 
 * ArrayListV
 * LinkedListV
-* TreeV
+* BinaryTreeV
 * GraphV
 
 !!! note

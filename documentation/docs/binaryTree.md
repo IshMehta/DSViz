@@ -1,6 +1,6 @@
-# TreeV
+# BinaryTreeV
 
-`<object> = TreeV()` : Creates an object for this class
+`<object> = BinaryTreeV()` : Creates an object for this class
 
 There are 4 variations of the add method to add nodes to the tree:
 

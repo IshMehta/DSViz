@@ -8,7 +8,7 @@ nav:
     - Package Structure: structure.md
     - ArrayListV: array.md
     - LinkedListV: list.md
-    - TreeV: tree.md
+    - BinaryTreeV: binaryTree.md
     - GraphV: graph.md
   - Examples: 
     - Binary Search Tree Example: BSTExample.md
