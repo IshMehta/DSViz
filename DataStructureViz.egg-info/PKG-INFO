@@ -6,6 +6,8 @@ Home-page: https://github.com/IshMehta/DataStructureViz
 Author: Ish Mehta
 Author-email: imehta34@gatech.edu
 License: MIT
+Project-URL: GitHub, https://github.com/IshMehta/DataStructureViz
+Project-URL: Documentation, https://ishmehta.github.io/DataStructureViz/
 Description: # DataStructureViz
         
         [![License](https://img.shields.io/badge/license-MIT-brightgreen)][license_link]
@@ -36,8 +38,8 @@ Description: # DataStructureViz
         # Links
         
         - GitHub: https://github.com/IshMehta/DataStructureViz
-        - PyPI:
-        - Documentation: 
+        - PyPI: https://pypi.org/project/DataStructureViz/
+        - Documentation: https://ishmehta.github.io/DataStructureViz/binaryTree/
         
         
         # Install
@@ -102,19 +104,14 @@ Description: # DataStructureViz
         ```zsh
         sudo dnf install graphviz graphviz-devel
         ```
+        ## Finally
+        After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
         
-        > After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
-        > 
-        > ```bash
-        > TODO: $ pip install our package name
-        > ```
+        ```bash
+         $ pip install DataStructureViz
+        ```
         
         *Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specific instructions on downloading GraphViz.*
-        
-        
-        # License
-        
-        This package is distributed under the [MIT License](https://github.com/IshMehta/DataStructureViz/blob/main/LICENSE)
         
         
 Keywords: data structure,graph,list,array,tree,BST,AVL,binary,draw,visualise
