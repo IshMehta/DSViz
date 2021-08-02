@@ -3,7 +3,7 @@
 The following is an example on a BST class which uses the TreeV class form the DSViz package to visualise the tree that will be created.
 
 ```python
-from DSViz import TreeV
+from DSViz import BinaryTreeV
 
 class BST:
     class Node:
@@ -16,7 +16,7 @@ class BST:
 
     def __init__(self):
         self.root = None
-        self.viz = TreeV()
+        self.viz = BinaryTreeV()
          
         
     def postorderVisualiser(self, curr):

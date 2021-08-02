@@ -1,7 +1,7 @@
 # Directed Graph Example
 
 ``` python
-from DSViz.GraphV import GraphV
+from DSViz import GraphV
 
 class directedGraph:
 

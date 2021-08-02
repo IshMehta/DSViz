@@ -12,3 +12,7 @@
     `.add()` method only accpets one parent and one child at a time
 
 For important use-cases check the examples section.
+
+!!! important
+
+To visualise a tree that is not a Binary Tree one can use the directed graph approach.

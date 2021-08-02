@@ -22,6 +22,7 @@ Here are a few examples...
 Goal: Array List which stores even numbers from 2-100
 
 ``` python 
+from DSViz import ArrayListV
 test =  ArrayListV()
 
 for i in range(1,51):
@@ -41,6 +42,7 @@ We suggest you start at the head of the linked list and iterate to the end and c
 > LinkedListV object upon creation has default CLL = False and DLL = False. These can be toggled upon object creation to change the how the pointers in the visualisation.
 
 ```python
+from DSViz import LinkedListV
 test = LinkedListV(CLL=True, DLL=True)
 
 for i in range(97, 123):
@@ -50,12 +52,13 @@ test.show
 ```
 ![Linked List Example](https://github.com/IshMehta/DataStructureViz/blob/main/resources/LinkedListExample.gif?raw=true)
 
-## Tree
+## Binary Tree
 
 Goal: Visualise a tree
 
 ```python
-test = TreeV()
+from DSViz import BinaryTreeV
+test = BinaryTreeV()
 
 test.add("a","b","c")
 test.add("b", left="d")
@@ -75,6 +78,7 @@ Goal: Visualise an undirected graph
 We suggest you to use the add method while iterating over your graph using BFS or DFS as per your choice. The below example is just a simple explanation of how the add method works.
 
 ```python
+from DSViz import GraphV
 test = GraphV()
 
 test.add('run', 'intr')
