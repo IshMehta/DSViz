@@ -1,5 +1,4 @@
-# DataStructureViz
-
+# Data Structure Visualiser
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)][license_link]
 
 [license_link]:https://github.com/IshMehta/DSViz/blob/main/LICENSE
@@ -24,5 +23,5 @@ This package can be used to visualise any implementations of the following:
 ## Links
 
 - GitHub: [https://github.com/IshMehta/DSViz](https://github.com/IshMehta/DSViz)
-- PyPI: [https://pypi.org/project/DSViz/](https://pypi.org/project/DSViz)
+- PyPI: [https://pypi.org/project/DataStructureVisualiser/](https://pypi.org/project/DataStructureVisualiser/)
 - Documentation: [https://ishmehta.github.io/DSViz/](https://ishmehta.github.io/DSViz/)

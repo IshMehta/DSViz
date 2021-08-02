@@ -1,4 +1,4 @@
-# DataStructureViz
+# Data Structure Visualiser
 
 [![License](https://img.shields.io/badge/license-MIT-brightgreen)][license_link]
 
@@ -28,7 +28,7 @@ These are just a few examples data structures that can be visualised using DSViz
 # Links
 
 - GitHub: https://github.com/IshMehta/DSViz
-- PyPI: https://pypi.org/project/DSViz/
+- PyPI: https://pypi.org/project/DataStructureVisualiser/
 - Documentation: https://ishmehta.github.io/DSViz/
 
 
