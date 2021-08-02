@@ -41,6 +41,6 @@ test = directedGraph(adjlist3, directed=True)
 test.show()
 ```
 
-<img src ="https://github.com/IshMehta/DataStructureViz/blob/main/resources/directedGraphExample.PNG?raw=true" width="700"/>
+<img src ="https://github.com/IshMehta/DSViz/blob/main/resources/directedGraphExample.PNG?raw=true" width="700"/>
 
 A similar approach can be followed to visualise any form of graph regardless of its implementation specifics.

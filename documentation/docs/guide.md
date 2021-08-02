@@ -30,7 +30,7 @@ for i in range(1,51):
 
 test.show
 ```
-![Array List Example](https://github.com/IshMehta/DataStructureViz/blob/main/resources/ArrayListExample.gif?raw=true)
+![Array List Example](https://github.com/IshMehta/DSViz/blob/main/resources/ArrayListExample.gif?raw=true)
 
 ## Linked List
 
@@ -50,7 +50,7 @@ for i in range(97, 123):
     
 test.show
 ```
-![Linked List Example](https://github.com/IshMehta/DataStructureViz/blob/main/resources/LinkedListExample.gif?raw=true)
+![Linked List Example](https://github.com/IshMehta/DSViz/blob/main/resources/LinkedListExample.gif?raw=true)
 
 ## Binary Tree
 
@@ -66,7 +66,7 @@ test.add("d", right="e")
 test.show()
 ```
 
-<img src='https://github.com/IshMehta/DataStructureViz/blob/main/resources/TreeExample.png?raw=true' width='500'/>
+<img src='https://github.com/IshMehta/DSViz/blob/main/resources/TreeExample.png?raw=true' width='500'/>
 
 
 ## Graph
@@ -98,7 +98,7 @@ test.add('sleep', 'runmem')
 test.show
 ```
 
-![Graph Example](https://github.com/IshMehta/DataStructureViz/blob/main/resources/GraphExample.png?raw=trueg)
+![Graph Example](https://github.com/IshMehta/DSViz/blob/main/resources/GraphExample.png?raw=trueg)
 
 
 

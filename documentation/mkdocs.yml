@@ -1,5 +1,4 @@
-site_name: DataStructureViz
-site_url: https://dsviz.com
+site_name: DSViz
 nav:
   - Home: index.md
   - Installation: installation.md
@@ -45,13 +44,13 @@ theme:
 
         name: Switch to light mode
   
-repo_url: https://github.com/IshMehta/DataStructureViz
-repo_name: IshMehta/DataStructureViz
+repo_url: https://github.com/IshMehta/DSViz
+repo_name: IshMehta/DSViz
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/IshMehta/DataStructureViz
+      link: https://github.com/IshMehta/DSViz
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/ish-mehta-529766166
 

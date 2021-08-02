@@ -49,6 +49,6 @@ test.visuliase('4')
 ```
 
 
-<img src ="https://github.com/IshMehta/DataStructureViz/blob/main/resources/GraphExample.jpg?raw=true" width="350"/>
+<img src ="https://github.com/IshMehta/DSViz/blob/main/resources/GraphExample.jpg?raw=true" width="350"/>
 
 A similar approach can be followed to visualise any form of graph regardless of its implementation specifics.

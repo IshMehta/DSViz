@@ -67,4 +67,4 @@ test.renderTree()
 
 This results in the following render.
 
-<img src='https://github.com/IshMehta/DataStructureViz/blob/main/resources/TreeExample2.PNG?raw=true' width='650'>
+<img src='https://github.com/IshMehta/DSViz/blob/main/resources/TreeExample2.PNG?raw=true' width='650'>
