@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: DataStructureViz
-Version: 1.0.0
+Version: 1.0.1
 Summary: DSViz is a simple and intuitive Python interface to multiple packages in order to help visualise different data structres while coding them. This package is developed mainly for students or developers who are in the process of learning data structures.
 Home-page: https://github.com/IshMehta/DataStructureViz
 Author: Ish Mehta
