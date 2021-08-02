@@ -397,8 +397,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    Tree
+  <a href="#binary-tree" class="md-nav__link">
+    Binary Tree
   </a>
   
 </li>
@@ -483,8 +483,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../tree/" class="md-nav__link">
-        TreeV
+      <a href="../binaryTree/" class="md-nav__link">
+        BinaryTreeV
       </a>
     </li>
   
@@ -629,8 +629,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#tree" class="md-nav__link">
-    Tree
+  <a href="#binary-tree" class="md-nav__link">
+    Binary Tree
   </a>
   
 </li>
@@ -670,7 +670,8 @@
 <p>Here are a few examples...</p>
 <h2 id="array-list">Array List</h2>
 <p>Goal: Array List which stores even numbers from 2-100</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span>  <span class="n">ArrayListV</span><span class="p">()</span>
+<p><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">DSViz</span> <span class="kn">import</span> <span class="n">ArrayListV</span>
+<span class="n">test</span> <span class="o">=</span>  <span class="n">ArrayListV</span><span class="p">()</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">51</span><span class="p">):</span>
     <span class="n">test</span><span class="o">.</span><span class="n">addNode</span><span class="p">(</span><span class="n">i</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
@@ -687,7 +688,8 @@
 <blockquote>
 <p>LinkedListV object upon creation has default CLL = False and DLL = False. These can be toggled upon object creation to change the how the pointers in the visualisation.</p>
 </blockquote>
-<p><div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">LinkedListV</span><span class="p">(</span><span class="n">CLL</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">DLL</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<p><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">DSViz</span> <span class="kn">import</span> <span class="n">LinkedListV</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">LinkedListV</span><span class="p">(</span><span class="n">CLL</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">DLL</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">123</span><span class="p">):</span>
     <span class="n">test</span><span class="o">.</span><span class="n">addNode</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
@@ -695,9 +697,10 @@
 <span class="n">test</span><span class="o">.</span><span class="n">show</span>
 </code></pre></div>
 <img alt="Linked List Example" src="https://github.com/IshMehta/DataStructureViz/blob/main/resources/LinkedListExample.gif?raw=true" /></p>
-<h2 id="tree">Tree</h2>
+<h2 id="binary-tree">Binary Tree</h2>
 <p>Goal: Visualise a tree</p>
-<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">TreeV</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">DSViz</span> <span class="kn">import</span> <span class="n">BinaryTreeV</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">BinaryTreeV</span><span class="p">()</span>
 
 <span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="s2">&quot;c&quot;</span><span class="p">)</span>
 <span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="n">left</span><span class="o">=</span><span class="s2">&quot;d&quot;</span><span class="p">)</span>
@@ -711,7 +714,8 @@
 <p>add(node1, node2) : creates an edge between two nodes, if the node exists, it creates an edge between the two, if node does not exist, it creates the node and the edge.</p>
 </blockquote>
 <p>We suggest you to use the add method while iterating over your graph using BFS or DFS as per your choice. The below example is just a simple explanation of how the add method works.</p>
-<div class="highlight"><pre><span></span><code><span class="n">test</span> <span class="o">=</span> <span class="n">GraphV</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">DSViz</span> <span class="kn">import</span> <span class="n">GraphV</span>
+<span class="n">test</span> <span class="o">=</span> <span class="n">GraphV</span><span class="p">()</span>
 
 <span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;run&#39;</span><span class="p">,</span> <span class="s1">&#39;intr&#39;</span><span class="p">)</span>
 <span class="n">test</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;intr&#39;</span><span class="p">,</span> <span class="s1">&#39;runbl&#39;</span><span class="p">)</span>

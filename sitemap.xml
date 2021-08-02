@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dsviz.com/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/BSTExample/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/array/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dsviz.com/binaryTree/</loc>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/directed_graph/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/graph/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/guide/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/installation/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/license/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/list/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/section/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/structure/</loc>
-         <lastmod>2021-07-31</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://dsviz.com/tree/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dsviz.com/undirected_graph/</loc>
-         <lastmod>2021-07-31</lastmod>
+         <lastmod>2021-08-02</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
