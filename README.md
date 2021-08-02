@@ -98,7 +98,7 @@ sudo dnf install graphviz graphviz-devel
 After installing GraphViz according to your OS, you can install our > package and the other dependencies using pip
 
 ```bash
- $ pip install DataStructureViz
+ $ pip install DataStructureVisualiser
 ```
 
 *Credits to [pygraphviz](https://github.com/pygraphviz/pygraphviz/blob/main/INSTALL.txt) for specific instructions on downloading GraphViz.*
