@@ -13,7 +13,7 @@ setup(
   author_email = 'imehta34@gatech.edu',     
   url = 'https://github.com/IshMehta/DataStructureViz',
   project_urls = {'GitHub' : 'https://github.com/IshMehta/DataStructureViz',
-                  'Documentation' : 'https://ishmehta.github.io/DataStructureViz/'}     
+                  'Documentation' : 'https://ishmehta.github.io/DataStructureViz/'},     
   keywords = ['data structure', 'graph','list','array','tree','BST','AVL','binary','draw','visualise'],
   install_requires=[    
       'tk',
