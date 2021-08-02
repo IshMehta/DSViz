@@ -29,7 +29,7 @@ These are just a few examples data structures that can be visualised using DSViz
 
 - GitHub: https://github.com/IshMehta/DataStructureViz
 - PyPI: https://pypi.org/project/DataStructureViz/
-- Documentation: https://ishmehta.github.io/DataStructureViz/binaryTree/
+- Documentation: https://ishmehta.github.io/DataStructureViz/
 
 
 # Install
