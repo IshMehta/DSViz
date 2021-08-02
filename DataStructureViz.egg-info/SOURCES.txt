@@ -4,10 +4,10 @@ README.md
 setup.cfg
 setup.py
 DSViz/ArrayListV.py
+DSViz/BinaryTreeV.py
 DSViz/GraphV.py
 DSViz/LinkedListV.py
 DSViz/NoneError.py
-DSViz/TreeV.py
 DSViz/__init__.py
 DSViz/arrow.png
 DSViz/doubleArrow.png
