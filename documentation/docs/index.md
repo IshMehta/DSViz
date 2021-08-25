@@ -3,6 +3,9 @@
 
 [license_link]:https://github.com/IshMehta/DSViz/blob/main/LICENSE
 
+[license_link]:https://github.com/IshMehta/DSViz/blob/main/LICENSE
+[![PyPI downloads](https://img.shields.io/pypi/dm/DataStructureVisualiser?color=important)](https://pypistats.org/packages/datastructurevisualiser)
+
 
 DSViz is a simple and intuitive Python interface to multiple packages in order to help visualise different data structres while codng them. This package is developed mainly for students or developers who are in the process of learning data structures. 
 
