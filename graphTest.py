@@ -1,6 +1,6 @@
 
 # from testC.graph import graph
-from testC.directedGraph import graph
+from testC.directedGraph import directedGraph
 
 adjlist = {'0': ['1','4'],
            '1': ['0','4','3','2'],
@@ -15,7 +15,7 @@ adjlist = {'0': ['1','4'],
 #             'E': ['D', 'F'],
 #             'F':[]
 #             }
-# test = graph(adjlist)
+# test = graph(adjwlist)
 # test.visualise('1')
 
 
